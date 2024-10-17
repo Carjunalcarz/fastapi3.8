@@ -1,0 +1,26 @@
+{
+    "[python]": {
+        // Automatically format the code when saving a file
+        "editor.formatOnSave": true,
+
+        // Configure code actions to perform on save
+        "editor.codeActionsnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "never"
+        },
+
+        // Set the default code formatter to Ruff, assuming it is installed
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // Display a vertical ruler at column 88 to help maintain PEP 8 style guide recommendations
+    "editor.rulers": [88],
+
+    // Specify the Python interpreter path (Conda environment)
+    "python.pythonPath": "C:/Users/acer/.conda/envs/fastapi3.8/python.exe",
+
+    // Add extra paths for Pylance to resolve imports correctly
+    "python.analysis.extraPaths": [
+        "C:/Users/acer/.conda/envs/fastapi3.8/Lib/site-packages"
+    ]
+}
